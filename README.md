@@ -1,7 +1,7 @@
 <h1 align="center"> API ADS 6º Semestre </h1>
 
 <div align="center">
-      <img src="" alt="DomRock_image" width="900">
+    <!--  <img src="" alt="DomRock_image" width="900"> -->
 <h2 align="center"> 💣 Code Don't Blow </h2>
 </div>
 
@@ -20,7 +20,6 @@
 ---->
 
 
-<a href ="#roadmap"> Roadmap de Entregas </a> |
 <a href ="#manual"> Guia de Documentações</a> |
 <a href ="#team"> Equipe </a>
 |
@@ -34,55 +33,33 @@
 <br>
 
 ## 🏁 Desafio: <a id="desafio"></a>
-      
-<!-- O desafio consiste em desenvolver uma **aplicação mobile** que centralize o atendimento ao cliente via **sistema de chat estruturado**. <br> -->
-<!-- A jornada inicia com uma **triagem automatizada**, que pode ser feita com uma URA digital baseada em regras e perguntas frequentes, e encaminha para atendentes humanos organizados por grupos e níveis de suporte. O sistema deve registrar todo o histórico de interações e permitir o acompanhamento completo do fluxo de atendimento, incluindo abertura, escalonamento e encerramento de chamados. <br>
-O objetivo é **otimizar o processo de atendimento**, promovendo eficiência operacional, melhor experiência para o cliente e maior controle gerencial, com regras de negócio refinadas colaborativamente durante o desenvolvimento. -->
+O desafio propõe o desenvolvimento de um sistema para gerenciamento de regras de negócio, utilizando técnicas de Engenharia de Software Assistida por Inteligência Artificial. Empresas possuem regras de negócio que mudam constantemente devido a novos produtos, alterações de preços, campanhas de vendas e mudanças em acordos comerciais com parceiros e fornecedores. Entretanto, essas regras muitas vezes não são registradas ou organizadas adequadamente, dificultando sua utilização, manutenção e rastreabilidade. Nesse contexto, o sistema deverá permitir registrar, organizar, analisar e simular regras de negócio, reduzindo problemas como inconsistências operacionais, conflitos entre regras, dependência de conhecimento tácito e perda de rastreabilidade.      
+
 
 
 ## MVP (Minimal Viable Product) <a id="mvp"></a>
-
-<!-- A solução para esse desafio é o **Orbita**, uma plataforma inovadora que combina uma aplicação mobile para clientes e atendentes com uma interface web completa para administradores, centralizando o atendimento por meio de um sistema de chat estruturado e proporcionando uma **experiência fluida, organizada e eficiente**. <br>
-
-A jornada se inicia com uma triagem, baseada em regras de negócio e perguntas frequentes, que direciona o usuário de forma rápida e assertiva. A partir dessa triagem, o sistema encaminha o atendimento para equipes humanas organizadas por grupos e níveis de suporte, garantindo que cada demanda seja tratada pelo responsável mais adequado. <br>
-
-Os clientes podem interagir facilmente via aplicativo, enquanto os atendentes têm flexibilidade para atuar tanto pelo mobile quanto pelo painel web, permitindo atendimento em tempo real de qualquer lugar. Já os administradores contam com um painel web robusto, que possibilita gerenciar filas, configurar regras de triagem, monitorar desempenho e manter o controle completo da operação. <br>
-
-O Orbita integra e registra automaticamente todo o histórico de interações, permitindo o acompanhamento completo do fluxo de atendimento. Desde a abertura até o escalonamento e encerramento dos chamados. O que antes exigia múltiplos canais, retrabalho e risco de perda de informações, agora é **centralizado em uma única plataforma, com rastreabilidade e controle total**. <br>
-
-**Isso não apenas otimiza o processo de atendimento e reduz falhas operacionais, mas também melhora significativamente a experiência do cliente e fortalece a gestão, permitindo decisões mais rápidas e embasadas.** -->
+Desenvolver uma versão do sistema capaz de cadastrar, consultar e gerenciar regras de negócio, permitindo que o usuário crie uma nova proposta de campanha, compare-a com as regras atuais e identifique possíveis conflitos antes de sua aplicação.
 
 
 ## Backlog do Produto
 
 <a id="backlog"></a>
 
-| Rank | Prioridade |                  User Story                    | Sprint  | RF |
-| :--: | :--------: | :--------------------------------------------: | :-----: | :------: |
-| 1 |  |  |  |  |
-| 2 |  |   |      |  |
-| 3 |  |  |    |  |
-| 4 |  |  |     |  |
-| 5 |  | |       |  |
-| 6 |  |  |   |  |
-| 7 |  |   |    |  |
-| 8 |  |  | |  |
-| 9 |  |  |       |  |
-| 10 |  |   |       |  |
-| 11 |  |   |       |  |
+| Rank | Prioridade |                  User Story                    | Sprint  |
+| :--: | :--------: | :--------------------------------------------: | :-----: |
+| 1 | Alta | Como Gerente de Vendas, quero falar uma regra em linguagem natural para o sistema interpretar e iniciar uma simulação da regra de negócio. | 1  |
+| 2 | Alta |  Como Gerente de Vendas, quero rodar a simulação da regra com diferentes cenários de meta para ver o impacto financeiro projetado antes de enviar para aprovação. |    1  |
+| 3 | Alta | Como Supervisor de Vendas quero avaliar, aprovar ou reprovar regras de negócios criadas por outros usuários, para garantir que estejam alinhadas ao orçamento e aos objetivos da campanha antes serem executadas. | 2   |
+| 4 |  Alta| Como Supervisor de Vendas, quero ver o status da minha regra, para acompanhar em que etapa ela está. |  2   |
+| 5 | Alta | Como Supervisor de Vendas, quero propor alterações nos dados da base de vendas, para corrigir alterações em campanhas sem comprometer a integridade das informações. |    2   |
+| 6 |  Alta | Como Supervisor de Vendas, quero poder visualizar os logs de edições e aprovações, para acompanhar o histórico de mudanças e garantir rastreabilidade |  3 |
+| 7 |  Alta |  Como Supervisor de Vendas, quero visualizar a trilha de decisão de uma regra para entender como o sistema chegou naquele resultado. |  3  |
+| 8 | Média |  Como Supervisor de Vendas, quero gerar um relatório final referente à campanha para visualizar o real impacto financeiro| 3 |
+| 9 | Média | Como Supervisor de Vendas, quero visualizar gráficos e insights ao final da campanha para entender os resultados e realizar comparações |  3     |
+| 10 |  Baixa| Como Supervisor de Vendas, quero visualizar as campanhas já realizadas, em andamento e previstas, para gerenciamento.  |   4    |
 
 <!--
 ## :bomb: DoR - Definition of Ready <a id="dor"></a>
-
-✔️ Descrição Clara e Concisa: A história do usuário possui uma descrição clara e concisa do ponto de vista do usuário.
-
-✔️ Critérios de Aceitação Definidos: Os critérios de aceitação foram definidos e são compreendidos pela equipe.
-
-✔️ Estimativa Concluída: A história foi estimada pela equipe de desenvolvimento.
-
-✔️ Dependências Identificadas: As dependências com outras histórias foram identificadas.
-
-✔️ Priorização do Product Owner: O Product Owner aprovou e priorizou todas as histórias.
 
 ## :boom: DoD - Definition of Done <a id="dod"></a>
 
@@ -104,27 +81,26 @@ O Orbita integra e registra automaticamente todo o histórico de interações, p
 
 | Sprint            | Período       | Status    |
 | ----------------- | ------------- | --------- |
-| Kick Off          |     |  |
-| 01                |  |  |
-| 02                |  |  |
-| 03                |  |  |
-| Feira de Soluções |  |  |
+| Kick Off          |  24/08 a 28/08   | Finalizado |
+| 01                | 07/09 a 27/09 | Em andamento |
+| 02                | 05/10 a 25/10| A fazer |
+| 03                | 02/11 a 22/11 | A fazer |
+| Feira de Soluções |  03/12|  A fazer|
 
 
-## Principais Protótipos da Aplicação <a id="prototipo"></a>
-
-<div align="center">
+<!--! ## Principais Protótipos da Aplicação <a id="prototipo"></a> 
+<div align="center"> --->
 <!-- <table>
   <tr>
-<th> <img src = "https://github.com/CodeDontBlow/pro4tech-Orbita/blob/chore/docs-sprint2/docs/assets/figma/mobile/telas-cliente/Cadastrar%20usu%C3%A1rio.png"> </th>
-<th> <img src = "https://github.com/CodeDontBlow/pro4tech-Orbita/blob/chore/docs-sprint2/docs/assets/figma/mobile/telas-cliente/Tela%20-%20Triagem.png"> </th>
-<th> <img src = "https://github.com/CodeDontBlow/pro4tech-Orbita/blob/chore/docs-sprint2/docs/assets/figma/mobile/telas-cliente/Tela%20Perfil.png"> </th>
-<th> <img src = "https://github.com/CodeDontBlow/pro4tech-Orbita/blob/chore/docs-sprint2/docs/assets/figma/mobile/telas-cliente/Tela%20de%20boas-vindas%20COM%20CHAMADOS.png"> </th>
+<th> <img src = ""> </th>
+<th> <img src = ""> </th>
+<th> <img src = ""> </th>
+<th> <img src = ""> </th>
 </tr> <tr>
-<td> <img src = "https://github.com/CodeDontBlow/pro4tech-Orbita/blob/chore/docs-sprint2/docs/assets/figma/desktop/atendente/Homepage.png"></td>
-<td> <img src ="https://github.com/CodeDontBlow/pro4tech-Orbita/blob/chore/docs-sprint2/docs/assets/figma/desktop/atendente/Chat.png"> </td>
-<td> <img src = "https://github.com/CodeDontBlow/pro4tech-Orbita/blob/chore/docs-sprint2/docs/assets/figma/desktop/atendente/Chamados.png"> </td>
-<td> <img src = "https://github.com/CodeDontBlow/pro4tech-Orbita/blob/chore/docs-sprint2/docs/assets/figma/desktop/admin/Admin%20Triagem-1.png"> </td>
+<td> <img src = ""></td>
+<td> <img src =""> </td>
+<td> <img src = ""> </td>
+<td> <img src = ""> </td>
   </tr>
 </table> -->
 </div>
@@ -134,14 +110,14 @@ O Orbita integra e registra automaticamente todo o histórico de interações, p
 <a id="demo"></a>
 
 ### Sprint 1:
-
+> Em breve! 
 <!-- <table>
   <tr>
     <td>
-      <video src="https://github.com/user-attachments/assets/119e8fb3-6dae-4ea1-9ac8-5a4d65728d78" controls height="400"></video>
+      <video src="" controls height="400"></video>
     </td>
     <td>
-      <video src="https://github.com/user-attachments/assets/99c6a827-923b-4f23-a091-4e22bf16678b" controls height="400"></video>
+      <video src="" controls height="400"></video>
     </td>
   </tr>
 </table> -->
@@ -161,30 +137,19 @@ O Orbita integra e registra automaticamente todo o histórico de interações, p
 <a id="tecnologias"></a>
 <div align="center">
 
-<!-- ![Docker](https://img.shields.io/badge/docker-0b192c.svg?style=for-the-badge&logo=docker&logoColor=white)
-![Postgres](https://img.shields.io/badge/postgres-0b192c.svg?style=for-the-badge&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/mongodb-0b192c.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-[![Socket.IO](https://img.shields.io/badge/Socket.IO-0b192c?style=for-the-badge&logo=socketdotio&logoColor=white)](https://socket.io/)
-![Expo](https://img.shields.io/badge/Expo-0b192c?style=for-the-badge&logo=expo&logoColor=white)
-![Android Studio](https://img.shields.io/badge/android_studio-0b192c.svg?style=for-the-badge&logo=android-studio&logoColor=white)
-![React Native](https://img.shields.io/badge/react_native-0b192c.svg?style=for-the-badge&logo=react&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-0b192c?style=for-the-badge&logo=typescript&logoColor=white)
-![Nest.js](https://img.shields.io/badge/nestjs-0b192c?style=for-the-badge&logo=nestjs&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-0b192c?style=for-the-badge&logo=Prisma&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-0b192c?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-0b192c?style=for-the-badge&logo=node.js&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-0b192c?&style=for-the-badge&logo=css3&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0b192c?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Figma](https://img.shields.io/badge/figma-0b192c.svg?style=for-the-badge&logo=figma&logoColor=white)
+![Vue.js](https://img.shields.io/badge/vue.js-0b192c.svg?style=for-the-badge&logo=vuedotjs&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/spring_boot-0b192c.svg?style=for-the-badge&logo=springboot&logoColor=white)
+![Java](https://img.shields.io/badge/java-0b192c.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/python-0b192c.svg?style=for-the-badge&logo=python&logoColor=white)
 ![Jira](https://img.shields.io/badge/jira-0b192c.svg?style=for-the-badge&logo=jira&logoColor=white)
-![Git](https://img.shields.io/badge/git-0b192c.svg?style=for-the-badge&logo=git&logoColor=white)
-![Swagger](https://img.shields.io/badge/Swagger-0b192c?style=for-the-badge&logo=Swagger&logoColor=white) -->
+![Figma](https://img.shields.io/badge/figma-0b192c.svg?style=for-the-badge&logo=figma&logoColor=white)
+
 
 </div>
 
-## Roadmap de Entregas <a id="roadmap"></a>
+<!-- ## Roadmap de Entregas <a id="roadmap"></a> -->
 
-<!-- <img src = "https://github.com/CodeDontBlow/pro4tech-Orbita/blob/chore/docs-sprint2/docs/assets/roadmap.jpg"> -->
+<!-- <img src = ""> -->
 
 ## 📖 Guia de Documentações <a id="manual"></a>
 
@@ -197,10 +162,10 @@ O Orbita integra e registra automaticamente todo o histórico de interações, p
 
 | Integrante            | Função            | GitHub                            |
 | --------------------- | ----------------- | --------------------------------- |
-| Rafael Gonçalves      | **Scrum Master**  | [![GitHub](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/EstupendoG)       |
+| Luana Souza       | **Scrum Master**  | [![GitHub](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/luanaapms)       |
 | Vanessa da Costa      | **Product Owner** | [![GitHub](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Doryumi)          |
 | Henrique Tadeu        | Dev Team          | [![GitHub](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/henrySilverIX)    |
-| Luana Souza           | Dev Team          | [![GitHub](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/luanaapms)        |
+| Rafael Gonçalves           | Dev Team          | [![GitHub](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/EstupendoG)        |
 | Raphaela Monteiro     | Dev Team          | [![GitHub](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/raphaelamonteiro) |
 | Ramon Amorim da Silva | Dev Team          | [![GitHub](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ramonads42)       |
 | Leonardo Cristiano    |  Dev Team  | [![GitHub](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Leonardo-dSouza)  |
