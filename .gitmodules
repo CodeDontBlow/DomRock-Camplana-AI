@@ -7,3 +7,6 @@
 [submodule "DomRock-iac"]
 	path = DomRock-iac
 	url = https://github.com/CodeDontBlow/DomRock-iac.git
+[submodule "DomRock-ml"]
+	path = DomRock-ml
+	url = https://github.com/CodeDontBlow/DomRock-ml.git
