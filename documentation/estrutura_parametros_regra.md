@@ -55,7 +55,7 @@ Documentação de contrato de dados entre Frontend, Backend e Agente de IA para 
         { "id": "30", "label": "AZUL (30)" },
         { "id": "40", "label": "VERMELHO (40)" },
         { "id": "50", "label": "AMARELO (50)" },
-        { "id": "60", "label": "VERDE (60)" }
+        { "id": "60", "label": "CINZA (60)" }
       ],
       "required": true
     },
